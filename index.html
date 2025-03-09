@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <style>
+      /* Add any additional styles here */
+    </style>
+  </head>
+  <body
+    class="min-h-screen bg-gradient-to-br from-black via-purple-900 to-black"
+  >
+    <!-- Navbar -->
+    <nav
+      class="fixed w-full z-50 bg-transparent py-4 transition-all duration-300"
+    >
+      <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex justify-between items-center">
+          <div
+            class="text-2xl font-bold bg-gradient-to-r from-purple-400 to-purple-600 bg-clip-text text-transparent"
+          >
+            PSK
+          </div>
+          <div class="hidden md:flex space-x-8">
+            <button
+              onclick="scrollToSection('home')"
+              class="flex items-center space-x-1 px-4 py-2 rounded-full transition-all duration-300 text-purple-200 hover:bg-purple-800/30"
+            >
+              <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M12 3l9 9-1.5 1.5L12 6l-7.5 7.5L3 12z" />
+              </svg>
+              <span>Home</span>
+            </button>
+            <button
+              onclick="scrollToSection('about')"
+              class="flex items-center space-x-1 px-4 py-2 rounded-full transition-all duration-300 text-purple-200 hover:bg-purple-800/30"
+            >
+              <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M12 3l9 9-1.5 1.5L12 6l-7.5 7.5L3 12z" />
+              </svg>
+              <span>About</span>
+            </button>
+            <button
+              onclick="scrollToSection('skills')"
+              class="flex items-center space-x-1 px-4 py-2 rounded-full transition-all duration-300 text-purple-200 hover:bg-purple-800/30"
+            >
+              <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M12 3l9 9-1.5 1.5L12 6l-7.5 7.5L3 12z" />
+              </svg>
+              <span>Skills</span>
+            </button>
+            <button
+              onclick="scrollToSection('experience')"
+              class="flex items-center space-x-1 px-4 py-2 rounded-full transition-all duration-300 text-purple-200 hover:bg-purple-800/30"
+            >
+              <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M12 3l9 9-1.5 1.5L12 6l-7.5 7.5L3 12z" />
+              </svg>
+              <span>Experience</span>
+            </button>
+            <button
+              onclick="scrollToSection('contact')"
+              class="flex items-center space-x-1 px-4 py-2 rounded-full transition-all duration-300 text-purple-200 hover:bg-purple-800/30"
+            >
+              <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M12 3l9 9-1.5 1.5L12 6l-7.5 7.5L3 12z" />
+              </svg>
+              <span>Contact</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Header/Hero Section -->
+    <header
+      id="home"
+      class="bg-black/80 backdrop-blur-sm shadow-purple-500/20 shadow-lg pt-24"
+    >
+      <div class="max-w-6xl mx-auto px-4 py-12 sm:px-6 lg:px-8">
+        <div class="flex flex-col items-center mb-8">
+          <div
+            class="w-48 h-48 rounded-full overflow-hidden mb-6 ring-4 ring-purple-500 shadow-xl"
+          >
+            <img
+              src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=400&h=400&fit=crop"
+              alt="Profile"
+              class="w-full h-full object-cover"
+            />
+          </div>
+          <div class="text-center">
+            <h1
+              class="text-5xl font-bold bg-gradient-to-r from-purple-400 to-purple-600 bg-clip-text text-transparent"
+            >
+              Prachi Suresh Kadam
+            </h1>
+            <p class="text-2xl text-purple-300 mt-2 font-semibold">
+              Aspiring Software Developer
+            </p>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main class="max-w-6xl mx-auto px-4 py-12 sm:px-6 lg:px-8 space-y-12">
+      <!-- About Section -->
+      <section
+        id="about"
+        class="bg-black/80 backdrop-blur-sm rounded-2xl p-8 shadow-xl shadow-purple-500/20 transform hover:scale-[1.02] transition-transform"
+      >
+        <h2 class="text-3xl font-bold text-purple-400 mb-4 flex items-center">
+          <svg
+            class="w-8 h-8 mr-2 text-purple-500"
+            fill="currentColor"
+            viewBox="0 0 24 24"
+          >
+            <path d="M12 3l9 9-1.5 1.5L12 6l-7.5 7.5L3 12z" />
+          </svg>
+          About Me
+        </h2>
+        <p class="text-purple-200 leading-relaxed text-lg">
+          I am a dedicated and passionate engineering student with hands-on
+          experience in software development and problem-solving. Proficient in
+          Python, C Programming, and Data Structures and Algorithms (DSA), I am
+          driven by my curiosity to build innovative solutions.
+        </p>
+      </section>
+
+      <!-- Education Section -->
+      <section
+        class="bg-black/80 backdrop-blur-sm rounded-2xl p-8 shadow-xl shadow-purple-500/20"
+      >
+        <div class="flex items-center mb-6">
+          <svg
+            class="w-8 h-8 text-purple-500 mr-2"
+            fill="currentColor"
+            viewBox="0 0 24 24"
+          >
+            <path d="M12 3l9 9-1.5 1.5L12 6l-7.5 7.5L3 12z" />
+          </svg>
+          <h2 class="text-3xl font-bold text-purple-400">Education</h2>
+        </div>
+        <div
+          class="bg-gradient-to-r from-purple-900/50 to-purple-800/50 rounded-xl p-6 border border-purple-700/50"
+        >
+          <h3 class="text-2xl font-semibold text-purple-300">
+            Bachelor of Engineering
+          </h3>
+          <p class="text-purple-400 mt-2">
+            Sindhudurg Shikshan Prasarak Mandal's College of Engineering,
+            Kankavli (SSPMCOE)
+          </p>
+        </div>
+      </section>
+
+      <!-- Experience Section -->
+      <section
+        id="experience"
+        class="bg-black/80 backdrop-blur-sm rounded-2xl p-8 shadow-xl shadow-purple-500/20"
+      >
+        <div class="flex items-center mb-6">
+          <svg
+            class="w-8 h-8 text-purple-500 mr-2"
+            fill="currentColor"
+            viewBox="0 0 24 24"
+          >
+            <path d="M12 3l9 9-1.5 1.5L12 6l-7.5 7.5L3 12z" />
+          </svg>
+          <h2 class="text-3xl font-bold text-purple-400">Experience</h2>
+        </div>
+        <div class="space-y-6">
+          <div
+            class="bg-gradient-to-r from-purple-900/50 to-purple-800/50 rounded-xl p-6 border border-purple-700/50 transform hover:scale-[1.02] transition-transform"
+          >
+            <h3 class="text-2xl font-semibold text-purple-300">
+              CodSoft Internship
+            </h3>
+            <ul class="list-none space-y-2 text-purple-200 mt-3">
+              <li class="flex items-center">
+                <div class="w-2 h-2 bg-purple-500 rounded-full mr-2"></div>
+                Gained practical experience in software development
+              </li>
+              <li class="flex items-center">
+                <div class="w-2 h-2 bg-purple-500 rounded-full mr-2"></div>
+                Collaborated with team members on various projects
+              </li>
+            </ul>
+          </div>
+          <div
+            class="bg-gradient-to-r from-purple-900/50 to-purple-800/50 rounded-xl p-6 border border-purple-700/50 transform hover:scale-[1.02] transition-transform"
+          >
+            <h3 class="text-2xl font-semibold text-purple-300">
+              College Internship Program
+            </h3>
+            <p class="text-purple-200 mt-3">
+              Participated in hands-on training and gained valuable insights
+              into software development and teamwork.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Skills Section -->
+      <section
+        id="skills"
+        class="bg-black/80 backdrop-blur-sm rounded-2xl p-8 shadow-xl shadow-purple-500/20"
+      >
+        <div class="flex items-center mb-6">
+          <svg
+            class="w-8 h-8 text-purple-500 mr-2"
+            fill="currentColor"
+            viewBox="0 0 24 24"
+          >
+            <path d="M12 3l9 9-1.5 1.5L12 6l-7.5 7.5L3 12z" />
+          </svg>
+          <h2 class="text-3xl font-bold text-purple-400">Skills</h2>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <div
+            class="bg-gradient-to-r from-purple-900 to-purple-700 rounded-xl p-6 shadow-lg transform hover:scale-105 transition-transform"
+          >
+            <span
+              class="text-purple-100 font-semibold text-lg block text-center"
+              >Python</span
+            >
+          </div>
+          <div
+            class="bg-gradient-to-r from-purple-800 to-purple-600 rounded-xl p-6 shadow-lg transform hover:scale-105 transition-transform"
+          >
+            <span
+              class="text-purple-100 font-semibold text-lg block text-center"
+              >C Programming</span
+            >
+          </div>
+          <div
+            class="bg-gradient-to-r from-purple-700 to-purple-500 rounded-xl p-6 shadow-lg transform hover:scale-105 transition-transform"
+          >
+            <span
+              class="text-purple-100 font-semibold text-lg block text-center"
+              >Data Structures and Algorithms (DSA)</span
+            >
+          </div>
+        </div>
+      </section>
+
+      <!-- Certifications Section -->
+      <section
+        class="bg-black/80 backdrop-blur-sm rounded-2xl p-8 shadow-xl shadow-purple-500/20"
+      >
+        <div class="flex items-center mb-6">
+          <svg
+            class="w-8 h-8 text-purple-500 mr-2"
+            fill="currentColor"
+            viewBox="0 0 24 24"
+          >
+            <path d="M12 3l9 9-1.5 1.5L12 6l-7.5 7.5L3 12z" />
+          </svg>
+          <h2 class="text-3xl font-bold text-purple-400">Certifications</h2>
+        </div>
+        <div
+          class="bg-gradient-to-r from-purple-900/50 to-purple-800/50 rounded-xl p-6 border border-purple-700/50 transform hover:scale-[1.02] transition-transform"
+        >
+          <div class="flex flex-col md:flex-row items-center gap-6">
+            <div class="w-full md:w-1/3">
+              <img
+                src="../cert.jpg"
+                alt="Certificate"
+                class="w-full h-auto rounded-lg shadow-lg"
+              />
+            </div>
+            <div class="w-full md:w-2/3">
+              <h3 class="text-2xl font-semibold text-purple-300">
+                Internship Certificate - Codsoft
+              </h3>
+              <p class="text-purple-200 mt-3">
+                Successfully completed the internship program at Codsoft,
+                demonstrating proficiency in software development and practical
+                application of programming concepts.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div
+          class="bg-gradient-to-r from-purple-900/50 to-purple-800/50 rounded-xl p-6 border border-purple-700/50 transform hover:scale-[1.02] transition-transform"
+        >
+          <div class="flex flex-col md:flex-row items-center gap-6">
+            <div class="w-full md:w-1/3">
+              <img
+                src="../cert2.jpg"
+                alt="Certificate"
+                class="w-full h-auto rounded-lg shadow-lg"
+              />
+            </div>
+            <div class="w-full md:w-2/3">
+              <h3 class="text-2xl font-semibold text-purple-300">
+                Internship Certificate - SSPMCOE
+              </h3>
+              <p class="text-purple-200 mt-3">
+                Successfully completed the internship program at SSPMCOE,
+                demonstrating proficiency in software development and practical
+                application of programming concepts.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer with Contact Information -->
+    <footer
+      id="contact"
+      class="bg-black/90 backdrop-blur-sm border-t border-purple-800 mt-12"
+    >
+      <div class="max-w-6xl mx-auto px-4 py-8 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+          <div class="space-y-4">
+            <h3 class="text-2xl font-bold text-purple-400 mb-4">Contact Me</h3>
+            <div
+              class="flex items-center space-x-2 text-purple-300 hover:text-purple-400 transition-colors"
+            >
+              <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M12 3l9 9-1.5 1.5L12 6l-7.5 7.5L3 12z" />
+              </svg>
+              <a href="mailto:prachikadam2010@gmail.com" class="hover:underline"
+                >prachikadam2010@gmail.com</a
+              >
+            </div>
+            <div class="flex items-center space-x-2 text-purple-300">
+              <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M12 3l9 9-1.5 1.5L12 6l-7.5 7.5L3 12z" />
+              </svg>
+              <span>9730216250</span>
+            </div>
+            <div class="flex items-center space-x-2 text-purple-300">
+              <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M12 3l9 9-1.5 1.5L12 6l-7.5 7.5L3 12z" />
+              </svg>
+              <span>Kankavli, Maharashtra</span>
+            </div>
+          </div>
+          <div class="flex justify-center md:justify-end space-x-8">
+            <a
+              href="https://github.com/prachisuresh18"
+              class="text-purple-400 hover:text-purple-300 transform hover:scale-110 transition-transform"
+            >
+              <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M12 3l9 9-1.5 1.5L12 6l-7.5 7.5L3 12z" />
+              </svg>
+            </a>
+            <a
+              href="https://www.linkedin.com/in/prachi-kadam-932b16287/"
+              class="text-purple-400 hover:text-purple-300 transform hover:scale-110 transition-transform"
+            >
+              <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M12 3l9 9-1.5 1.5L12 6l-7.5 7.5L3 12z" />
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      function scrollToSection(id) {
+        const element = document.getElementById(id);
+        if (element) {
+          element.scrollIntoView({ behavior: "smooth" });
+        }
+      }
+    </script>
+  </body>
+</html>
